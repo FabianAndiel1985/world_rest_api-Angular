@@ -1,0 +1,32 @@
+.card {
+  border: 2px solid black;
+  max-width: 264px;
+  height: 336px;
+  border-radius: 8px;
+  position: relative;
+
+  img {
+    height: 160px;
+    width: 100%;
+  }
+
+  &_text-section {
+    padding: 24px 91px 46px 24px;
+    p {
+      font-size: 18px;
+      font-weight: bolder;
+      line-height: 26px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0px;
+
+      li {
+        span {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
