@@ -3,5 +3,14 @@
     <input />
     <select></select>
   </div>
+
+  <div *ngIf="countries.length >= 1; else noCountries">
+    <p>There are countries</p>
+  </div>
+
+  <ng-template #noCountries>
+    <p>there are no countries</p>
+  </ng-template>
+
   <app-card />
 </main>
