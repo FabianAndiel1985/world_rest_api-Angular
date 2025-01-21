@@ -6,6 +6,22 @@ main {
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+
+    &__icon {
+      height: 15px+38px+2px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      padding-left: 32px;
+    }
+
+    input {
+      padding: 19px 32px 19px 74px;
+    }
+
+    select {
+      padding: 18px 74px 18px 24px;
+    }
   }
 
   .grid-container {

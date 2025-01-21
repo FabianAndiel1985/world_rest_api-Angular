@@ -1,7 +1,18 @@
 <main>
   <div class="search-row">
-    <input />
-    <select></select>
+    <div class="search-row__icon">
+      <fa-icon [icon]="faMagnifiyingGlass"></fa-icon>
+    </div>
+    <input placeholder="Search for a country..." />
+    <select>
+      <option value="">Filter by Region</option>
+      <option value="africa">Africa</option>
+      <option value="america">America</option>
+      <option value="asia">Asia</option>
+      <option value="europe">Europe</option>
+      <option value="spider">Spider</option>
+      <option value="goldfish">Goldfish</option>
+    </select>
   </div>
 
   <div class="grid-container" *ngIf="countries.length >= 1; else noCountries">

@@ -3,16 +3,19 @@ import { CardComponent } from '../../shared/card/card.component';
 import { CountryService } from '../../services/api/country.service';
 import { catchError, of } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, FontAwesomeModule],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
 export class MainComponent implements OnInit {
   countries: any[] = [];
+  faMagnifiyingGlass = faMagnifyingGlass;
 
   constructor(private countryService: CountryService) {}
 
