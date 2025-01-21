@@ -4,13 +4,18 @@
     <select></select>
   </div>
 
-  <div *ngIf="countries.length >= 1; else noCountries">
-    <p>There are countries</p>
+  <div class="grid-container" *ngIf="countries.length >= 1; else noCountries">
+    <app-card
+      *ngFor="let country of countries"
+      [population]="country.population"
+      [region]="country.region"
+      [capital]="country.capital"
+      [imgSrc]="country.flags.svg"
+      [name]="country.name.official"
+    ></app-card>
   </div>
 
   <ng-template #noCountries>
     <p>there are no countries</p>
   </ng-template>
-
-  <app-card />
 </main>

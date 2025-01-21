@@ -1,11 +1,19 @@
 <div class="card">
-  <img src="https://flagcdn.com/gs.svg" />
+  <img src="{{ imgSrc }}" />
   <div class="card_text-section">
-    <p>Country</p>
+    <p>{{ name }}</p>
     <ul>
-      <li><span class="card_text-section_category">Population:</span></li>
-      <li><span class="card_text-section_category">Region:</span></li>
-      <li><span class="card_text-section_category">Capital:</span></li>
+      <li>
+        <span class="card_text-section_category"
+          >Population: {{ population }}</span
+        >
+      </li>
+      <li>
+        <span class="card_text-section_category">Region: {{ region }}</span>
+      </li>
+      <li>
+        <span class="card_text-section_category">Capital: {{ capital }}</span>
+      </li>
     </ul>
   </div>
 </div>

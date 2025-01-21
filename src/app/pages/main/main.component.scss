@@ -1,9 +1,18 @@
 main {
   padding: 48px 80px;
+  position: relative;
 
   .search-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+  }
+
+  .grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5.58%;
+    row-gap: 75px;
   }
 }
